@@ -137,6 +137,9 @@
 
   /* estilos del header*/
 
+@media screen and( min-width:650 ) {
+    
+}
 
 @media screen and (min-width:600px) {
 
@@ -144,22 +147,21 @@
  .header-miproye{
      display: flex;
      justify-content: space-between;
-     flex-direction:  wrap;
      background-color: orange;
      padding: 10px 30px;
+     flex-wrap: wrap;
+     
  }
 
  
  .header-miproye h1{
-     font-size: 40px;
+    font-size: 2.8rem;
  }
 
 
  header nav ul{
-     margin-right: 30px;
-     display: flex;
-     flex-direction: row;
-     list-style: none;
+    display: flex;
+    list-style: none;
  }
   
 .header-miproye nav ul li{
@@ -170,7 +172,9 @@
      margin-top: 5px;
      box-shadow: 3px 3px 2px;
      border-radius: 50px;
-    transition: 2seg;    
+     transition: 2seg; 
+     font-size: 1rem;   
+     
  }
 
     .header-miproye nav ul li:hover{
@@ -180,7 +184,7 @@
 
  }
     
-     .header-miproye nav ul li a{
+    .header-miproye nav ul li a{
     list-style:none;
     text-decoration: none;
     color: black;
@@ -191,15 +195,10 @@
 
 
  /* main de mi proye */
- /* consultas: cuando yo pongo al main-proye display:inline-block me quedan los textos uno al lado del otro,
- y no se como arreglaro, tambien. Me queda titulo (h2) texto (p) al lado y la imagen por abajo, yo quiero que me
- quede la imagen a la izquierda, los dos textos con sus titulos a la drecha al lado de la imagen . Si estableces un text align,
- pero le marcas el ancho, se va a mover en esa alineacion de texto, no en el total del bloque*/
-
-/* hacerlo en dispositivos mobiles */
- /* podria trabajar con grid serian dos columnas, una donde va la imagen y la otra el texto y serian 4 filas */ 
  
  /* estilos de main generales */
+ 
+ /* empieza grid */
 
  .main-miproye{
     padding: 1rem;
@@ -217,12 +216,11 @@
  }
 
  /* estilos de main especificos */
- 
- /* empieza grid */ 
+  
  main .imagen-ares{
     grid-area: imagen-ares;
-    justify-self: left;
     width: 100%;
+
  }
 
 .main-miproye h2{
@@ -254,7 +252,7 @@
  .main-miproye p{
     text-align: center; 
     margin-bottom: 30px;
-    width: 500px;
+    
   }
 
 
