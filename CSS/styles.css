@@ -1,0 +1,514 @@
+/* reset */
+
+/* mobile first */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* estilos del body*/
+
+ .body-miproye{
+    background-color: rgb(255, 242, 242);
+ }
+
+
+ /* estilos de header */
+
+ .header-miproye{
+    display: none;
+ }
+
+ /* estilos del main */
+
+ .main-miproye{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+ }
+
+ .main-miproye h2{
+    color: rgb(13, 143, 143);
+ }
+
+ .main-miproye img{
+    width: 100%;
+}
+
+ .main-miproye p{
+    margin-top: 10px;
+    text-align: center;
+ }
+
+
+ /* estilos de section */
+
+.info-dioses{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.info-dioses p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*  estilo de formulario */
+
+.reserva{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.reserva fieldset{
+    text-align: center;
+}
+.reserva h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.nombre input{
+    width: 150px;
+
+ }
+
+.correo input{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 7px;
+    
+ }
+
+
+.mensaje input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    
+ }
+
+
+ /* estilos generales del footer */
+
+.footer-miproye{
+    text-align: center;
+}
+
+.footer-miproye h4{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-miproye a{
+    text-decoration: none;
+}
+ .imagen-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.insta{
+     width: 40px;
+     height: 40px;
+     margin-right: 20px;
+}
+
+.facebook{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.youtube{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+ /* para pantallas mas grandes */
+
+  /* estilos del header*/
+
+
+@media screen and (min-width:600px) {
+
+    
+ .header-miproye{
+     display: flex;
+     justify-content: space-between;
+     flex-direction:  wrap;
+     background-color: orange;
+     padding: 10px 30px;
+ }
+
+ 
+ .header-miproye h1{
+     font-size: 40px;
+ }
+
+
+ header nav ul{
+     margin-right: 30px;
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+ }
+  
+.header-miproye nav ul li{
+     text-decoration: none;
+     margin-right: 10px;
+     background-color: whitesmoke;
+     padding: 8px;
+     margin-top: 5px;
+     box-shadow: 3px 3px 2px;
+     border-radius: 50px;
+    transition: 2seg;    
+ }
+
+    .header-miproye nav ul li:hover{
+    background-color: rgb(125, 226, 237);
+    transform: scale(0.9);
+    box-shadow: 1px 1px 3px black;
+
+ }
+    
+     .header-miproye nav ul li a{
+    list-style:none;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+ }
+
+
+
+
+ /* main de mi proye */
+ /* consultas: cuando yo pongo al main-proye display:inline-block me quedan los textos uno al lado del otro,
+ y no se como arreglaro, tambien. Me queda titulo (h2) texto (p) al lado y la imagen por abajo, yo quiero que me
+ quede la imagen a la izquierda, los dos textos con sus titulos a la drecha al lado de la imagen . Si estableces un text align,
+ pero le marcas el ancho, se va a mover en esa alineacion de texto, no en el total del bloque*/
+
+/* hacerlo en dispositivos mobiles */
+ /* podria trabajar con grid serian dos columnas, una donde va la imagen y la otra el texto y serian 4 filas */ 
+ 
+ /* estilos de main generales */
+
+ .main-miproye{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,  2fr) ;
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr ;
+    grid-template-areas:
+    "imagen-ares h2"
+    "imagen-ares p"
+    "imagen-ares h2-dos"
+    "imagen-ares p-dos";
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 10px;
+ }
+
+ /* estilos de main especificos */
+ 
+ /* empieza grid */ 
+ main .imagen-ares{
+    grid-area: imagen-ares;
+    justify-self: left;
+    width: 100%;
+ }
+
+.main-miproye h2{
+    grid-area: h2;
+    font-size: 1.7rem;
+ }
+
+.main-miproye p{
+    grid-area: p;
+ }
+
+.main-miproye .h2-dos{
+    grid-area: h2-dos;
+ }
+
+.main-miproye .p-dos{
+    grid-area: p-dos;
+ }
+
+/* hasta aca va la parte de grid */
+
+/* aca arranca otra cosa */ 
+.main-miproye h2{
+    
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+ .main-miproye p{
+    text-align: center; 
+    margin-bottom: 30px;
+    width: 500px;
+  }
+
+
+/* section */
+
+
+.info-dioses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+ }
+
+.info-dioses p{
+    width: 800px;
+ }
+
+
+/* estilos formulario */
+
+.consulta-astro{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 50px;
+    width: 56.25rem;
+ }
+
+.reserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center; 
+ }
+
+.reserva fieldset{
+    padding: 20px;
+    background-color: aquamarine;
+
+ }
+
+.nombre input{
+    width: 200px;
+    
+ }
+
+
+.correo input{
+    width: 200px;
+ }
+
+
+.mensaje input{
+    font-size: 1rem;
+    width: 200px;
+    height: 150px;
+    
+    
+ }
+
+.enviar{
+    width: 100px;
+ }
+
+.restablecer{
+    width: 100px;
+ }
+
+
+/* footer */
+
+.footer-miproye{
+    background-color: orange;
+    text-align: center;
+ }  
+
+.footer-miproye a{
+    text-decoration: none;
+ }
+
+ .imagen-logo{
+
+     margin-top: 10px;
+     margin-bottom: 10px;
+     align-items: center;
+ }
+
+ .insta{
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+ }
+
+ .facebook{
+     width: 30px;
+     height: 30px;
+     margin-right: 10px;
+ }
+
+ .youtube{
+     width: 30px;
+     height: 30px;
+     margin-right: 10px;
+ }
+
+  
+}  
+
+
+
+/* -------------------------------------------------estilos de sobremi.html-------------------------------------------------------------------- */
+
+/*reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de listas */
+
+/* mobile first */
+
+.lista1{
+    display: flex;
+    flex-direction:row ;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: aquamarine;
+    
+
+}
+
+.lista1 a{
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50px;
+    padding: 5px ;
+    background-color: aliceblue;
+}
+
+.titulo-sobremi{
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   background-color: rgb(249, 103, 24);
+}
+
+.sobremi2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sobremi3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sobremi3 p{
+    margin-top: 20px;
+
+}
+
+.sobremi3 img{
+    margin-top: 20px;
+    width: 100%;
+}
+span{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* para desktop */
+
+@media screen and (min-width:600px){
+
+
+    .lista1{
+        display: flex;
+        flex-direction:row ;
+        width: 100%;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: rgb(103, 232, 255);
+        
+    
+    }
+    
+    .lista1 a{
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 3px 3px 3px black;
+        border-radius: 50px;
+        padding: 5px ;
+        background-color: aliceblue;
+    }
+    
+    
+    .sobremi2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .sobremi2 p{
+        margin-top: 10px;
+        width: 800px;
+    }
+    
+    .sobremi3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    
+    .sobremi3 img{
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    .sobremi3 p{
+        margin-top: 20px;
+        width: 800px;
+        font-weight: b;
+    }
+
+    span{
+        font-weight: bold;
+    }
+}
