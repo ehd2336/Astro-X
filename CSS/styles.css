@@ -359,6 +359,7 @@
      margin-right: 10px;
  }
 
+ . 
   
 }  
 
@@ -425,7 +426,8 @@
 }
 
 .sobremi3 p{
-    margin-top: 20px;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
 
 }
 
@@ -474,6 +476,14 @@ span{
         font-weight: bold;
     }
 
+    #hades{
+        width: 50%;
+    }
+
+    #zeus{
+        width: 50%;
+    }
+/*-------------------grid------- ------*/
     .sobremi2{
         display: grid;
         grid-template-columns: 1fr ;
@@ -499,8 +509,10 @@ span{
         grid-template-columns: 0.5fr 2fr;
         grid-template-rows: 1fr ;
         grid-template-areas:
-        "p-pluton imagen-pluton"
-        "p-venus imagen-venus";
+        "p-sun imagen-sun"
+        "p-venus imagen-venus"
+        "p-jupiter imagen-jupiter"
+        "p-pluton imagen-pluton" ;
         justify-items: center;
         align-items: center;
         margin-bottom: 1rem;
@@ -511,7 +523,7 @@ span{
 
      .sobremi3 .imagen-pluton{
         grid-area: imagen-pluton;
-        width: 50%;
+        width: 40%;
 
      }
 
@@ -529,8 +541,30 @@ span{
      .sobremi3 .imagen-venus{
 
         grid-area: imagen-venus;
-        width: 50%;
+        width: 40%;
     }
+
+    .sobremi3 .imagen-jupiter{
+
+        grid-area: imagen-jupiter;
+        width: 40%;
+    }
+
+    .sobremi3 .p-jupiter{
+        text-align: left;
+        grid-area: p-jupiter;
+     }
+
+     .sobremi3 .imagen-sun{
+
+        grid-area: imagen-sun;
+        width: 40%;
+    }
+
+    .sobremi3 .p-sun{
+        text-align: left;
+        grid-area: p-sun;
+     }
 }
   /* --------------Grid de sobremi.html------------------*/
 
