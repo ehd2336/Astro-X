@@ -133,24 +133,19 @@
     margin-right: 20px;
 }
 
- /* para pantallas mas grandes */
+ /*------------------------------ para pantallas mas grandes --------------------------------------------------------*/
 
   /* estilos del header*/
 
-@media screen and( min-width:650 ) {
-    
-}
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
 
     
  .header-miproye{
      display: flex;
      justify-content: space-between;
      background-color: orange;
-     padding: 10px 30px;
-     flex-wrap: wrap;
-     
+     padding: 10px 30px;     
  }
 
  
@@ -203,8 +198,8 @@
  .main-miproye{
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(2,  2fr) ;
-    grid-template-rows: 1fr 0.5fr 1fr 0.5fr ;
+    grid-template-columns: 1.5fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr 2fr ;
     grid-template-areas:
     "imagen-ares h2"
     "imagen-ares p"
@@ -225,11 +220,17 @@
 
 .main-miproye h2{
     grid-area: h2;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
  }
 
 .main-miproye p{
     grid-area: p;
+    font-size: 1rem;
+    text-align: center; 
+    margin-bottom: 30px;
  }
 
 .main-miproye .h2-dos{
@@ -243,19 +244,15 @@
 /* hasta aca va la parte de grid */
 
 /* aca arranca otra cosa */ 
-.main-miproye h2{
-    
-    margin-top: 30px;
-    margin-bottom: 10px;
+
+
+
+  /* divisor */
+  .divisor{
+    background-color: orange;
+    margin-top: 5rem;
+    height: 1rem;
   }
-
- .main-miproye p{
-    text-align: center; 
-    margin-bottom: 30px;
-    
-  }
-
-
 /* section */
 
 
@@ -394,7 +391,7 @@
 }
 
 .lista1 a{
-    text-decoration: none;
+     text-decoration: none;
     font-weight: bold;
     box-shadow: 3px 3px 3px black;
     border-radius: 50px;
@@ -463,11 +460,13 @@ span{
     
     .lista1 a{
         text-decoration: none;
+        list-style: none;
         font-weight: bold;
         box-shadow: 3px 3px 3px black;
         border-radius: 50px;
         padding: 5px ;
         background-color: aliceblue;
+        color: black;
     }
     
     
