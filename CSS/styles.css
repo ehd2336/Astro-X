@@ -207,14 +207,16 @@
     "imagen-ares p-dos";
     justify-content: center;
     justify-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
  }
 
  /* estilos de main especificos */
   
  main .imagen-ares{
     grid-area: imagen-ares;
-    width: 100%;
+    width: 80%;
 
  }
 
@@ -371,10 +373,11 @@
     box-sizing: border-box;
 }
 
+
+
+/* -------mobile first---------- */
+
 /* estilos de listas */
-
-/* mobile first */
-
 .lista1{
     display: flex;
     flex-direction:row ;
@@ -416,9 +419,6 @@
 }
 
 .sobremi3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -438,43 +438,12 @@ span{
     font-size: 1.1rem;
 }
 
-/* para desktop */
+/* -------------para desktop-------------- */
 
-@media screen and (min-width:600px){
-
-
-    .lista1{
-        display: flex;
-        flex-direction:row ;
-        width: 100%;
-        justify-content: space-evenly;
-        list-style: none;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 5px;
-        padding-right: 5px;
-        background-color: rgb(103, 232, 255);
-        
-    
-    }
-    
-    .lista1 a{
-        text-decoration: none;
-        list-style: none;
-        font-weight: bold;
-        box-shadow: 3px 3px 3px black;
-        border-radius: 50px;
-        padding: 5px ;
-        background-color: aliceblue;
-        color: black;
-    }
-    
+@media screen and (min-width:600px) {
     
     .sobremi2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+       
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -485,10 +454,7 @@ span{
     }
     
     .sobremi3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+       
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -496,7 +462,6 @@ span{
     
     .sobremi3 img{
         margin-top: 20px;
-        width: 70%;
     }
 
     .sobremi3 p{
@@ -508,4 +473,65 @@ span{
     span{
         font-weight: bold;
     }
+
+    .sobremi2{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "h1-titulo "
+        "p-titulo ";
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .sobremi2 .h1-titulo{
+        grid-area:h1-titulo ;
+     }
+
+     .sobremi2 .p-titulo{
+        grid-area: p-titulo;
+     }
+
+
+    .planetas-mios{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "p-pluton imagen-pluton"
+        "p-venus imagen-venus";
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        gap: 2.5rem;
+     }
+
+     .sobremi3 .imagen-pluton{
+        grid-area: imagen-pluton;
+        width: 50%;
+
+     }
+
+     .sobremi3 .p-pluton{
+        text-align: left;
+        grid-area: p-pluton;
+     }
+    
+     .sobremi3 .p-venus{
+        text-align: left;
+        grid-area: p-venus;
+       
+     }
+
+     .sobremi3 .imagen-venus{
+
+        grid-area: imagen-venus;
+        width: 50%;
+    }
 }
+  /* --------------Grid de sobremi.html------------------*/
+
+     
