@@ -1,5 +1,7 @@
 /* reset */
 
+
+/*----------------Index.html----*/
 /* mobile first */
 *{
     margin: 0;
@@ -133,18 +135,19 @@
     margin-right: 20px;
 }
 
- /*------------------------------ para pantallas mas grandes --------------------------------------------------------*/
+ /*------------------------------ para desktop --------------------------------------------------------*/
 
   /* estilos del header*/
 
-
 @media screen and (min-width:700px) {
+/* tuve que dejar el min en 700px, porque si lo dejaba en 600px se rompia la fluidez y me rompi la cabeza intentando ver porque y no pude, pero asi se corrigio */
 
-    
+   
+        
  .header-miproye{
      display: flex;
      justify-content: space-between;
-     background-color: orange;
+     background-color: rgb(146, 217, 229);
      padding: 10px 30px;     
  }
 
@@ -187,11 +190,8 @@
  }
 
 
-
-
- /* main de mi proye */
  
- /* estilos de main generales */
+ /*-------------- estilos de main generales-------------- */
  
  /* empieza grid */
 
@@ -223,8 +223,8 @@
 .main-miproye h2{
     grid-area: h2;
     font-size: 2rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
     
  }
 
@@ -232,7 +232,7 @@
     grid-area: p;
     font-size: 1rem;
     text-align: center; 
-    margin-bottom: 30px;
+    margin-bottom: 2.2rem;
  }
 
 .main-miproye .h2-dos{
@@ -244,9 +244,6 @@
  }
 
 /* hasta aca va la parte de grid */
-
-/* aca arranca otra cosa */ 
-
 
 
   /* divisor */
@@ -326,7 +323,7 @@
 /* footer */
 
 .footer-miproye{
-    background-color: orange;
+    background-color:rgb(146, 217, 229);
     text-align: center;
  }  
 
@@ -358,8 +355,6 @@
      height: 30px;
      margin-right: 10px;
  }
-
- . 
   
 }  
 
@@ -376,7 +371,7 @@
 
 
 
-/* -------mobile first---------- */
+/* ----------------mobile first--------------------- */
 
 /* estilos de listas */
 .lista1{
@@ -440,7 +435,7 @@ span{
     font-size: 1.1rem;
 }
 
-/* -------------para desktop-------------- */
+/* -------------------------para desktop-------------------------- */
 
 @media screen and (min-width:600px) {
     
@@ -476,14 +471,8 @@ span{
         font-weight: bold;
     }
 
-    #hades{
-        width: 50%;
-    }
 
-    #zeus{
-        width: 50%;
-    }
-/*-------------------grid------- ------*/
+/*-------------------grid----------------*/
     .sobremi2{
         display: grid;
         grid-template-columns: 1fr ;
@@ -567,5 +556,3 @@ span{
      }
 }
   /* --------------Grid de sobremi.html------------------*/
-
-     
