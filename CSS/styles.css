@@ -328,6 +328,7 @@
 /* -------------------------------------------------estilos de sobremi.html-------------------------------------------------------------------- */
 
 /*reset */
+
 *{
     margin: 0;
     padding: 0;
@@ -339,29 +340,6 @@
 /* ----------------mobile first--------------------- */
 
 /* estilos de listas */
-.lista1{
-    display: flex;
-    flex-direction:row ;
-    width: 100%;
-    justify-content: space-between;
-    list-style: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: aquamarine;
-    
-
-}
-
-.lista1 a{
-     text-decoration: none;
-    font-weight: bold;
-    box-shadow: 3px 3px 3px black;
-    border-radius: 50px;
-    padding: 5px ;
-    background-color: aliceblue;
-}
 
 .titulo-sobremi{
    display: flex;
