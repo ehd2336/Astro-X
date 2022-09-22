@@ -62,38 +62,40 @@
 
 .footer-miproye{
     text-align: center;
+    background-color:  rgb(146, 217, 229);
+    width: 100%;
 }
 
 .footer-miproye h4{
-    font-size: 17px;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .footer-miproye a{
     text-decoration: none;
 }
  .imagen-logo{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
     align-items: center;
 }
 
 .insta{
-     width: 40px;
-     height: 40px;
-     margin-right: 20px;
+     width: 2.2rem;
+     height: 2.2rem;
+     margin-right: 1rem;
 }
 
 .facebook{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1rem;
 }
 
 .youtube{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1rem;
 }
 
  /*------------------------------ para desktop --------------------------------------------------------*/
@@ -103,11 +105,7 @@
 @media screen and (min-width:717px) {
 /* tuve que dejar el min en 717px, porque si lo dejaba en 600px se rompia la fluidez y me rompi la cabeza intentando ver porque y no pude, pero asi se corrigio */
 
- .body-miproye{
-    background-image: ;
-    background-repeat: no-repeat;
-    background-size: 150rem;
- }  
+ 
         
  .header-miproye{
      display: flex;
@@ -247,7 +245,8 @@
 .footer-miproye{
     background-color:rgb(146, 217, 229);
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 100%;
  }  
 
 .footer-miproye a{
@@ -274,8 +273,8 @@
  }
 
  .youtube{
-     width: 30px;
-     height: 30px;
+     width: 25px;
+     height: 25px;
      margin-right: 10px;
  }
   
@@ -413,13 +412,13 @@ footer{
 
     .planetas-mios{
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: 2fr 2fr;
         grid-template-rows: 1fr ;
         grid-template-areas:
         "p-sun imagen-sun"
-        "p-venus imagen-venus"
+        "imagen-venus p-venus "
         "p-jupiter imagen-jupiter"
-        "p-pluton imagen-pluton" ;
+        "imagen-pluton p-pluton " ;
         justify-items: center;
         align-items: center;
         margin-bottom: 1rem;
@@ -430,47 +429,69 @@ footer{
 
      .sobremi3 .imagen-pluton{
         grid-area: imagen-pluton;
-        width: 40%;
+        width: 30%;
+        margin-left: 5rem;
+
 
      }
 
      .sobremi3 .p-pluton{
         text-align: center;
         grid-area: p-pluton;
+        width: 35rem;
+        margin-right: 5rem;
+
+
      }
     
      .sobremi3 .p-venus{
         text-align: center;
         grid-area: p-venus;
+        width: 35rem;
+        margin-right: 5rem;
+
        
      }
 
      .sobremi3 .imagen-venus{
 
         grid-area: imagen-venus;
-        width: 40%;
+        width: 30%;
+        margin-left: 5rem;
+
     }
 
     .sobremi3 .imagen-jupiter{
 
         grid-area: imagen-jupiter;
-        width: 40%;
+        width: 30%;
+        margin-right: 5rem;
+
     }
 
     .sobremi3 .p-jupiter{
         text-align: center;
         grid-area: p-jupiter;
+        width: 35rem;
+        margin-left: 5rem;
+
      }
 
      .sobremi3 .imagen-sun{
 
         grid-area: imagen-sun;
-        width: 40%;
+        width: 30%;
+        margin-right: 5rem;
+
     }
 
     .sobremi3 .p-sun{
         text-align: center;
         grid-area: p-sun;
+        width: 35rem;
+        margin-left: 5rem;
+
+        
      }
 }
   /* --------------Grid de sobremi.html------------------*/
