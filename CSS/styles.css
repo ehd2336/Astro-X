@@ -389,8 +389,15 @@ span{
     }
 
     .sobremi2 p{
-        margin-top: 10px;
-        width: 800px;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        width: 60rem;
+        
+    }
+
+    .h2-planetas{
+        background-color: aquamarine;
+
     }
     
     .sobremi3{
@@ -417,24 +424,17 @@ span{
 
 /*-------------------grid----------------*/
     .sobremi2{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr ;
-        grid-template-areas:
-        "h1-titulo "
-        "p-titulo ";
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         justify-items: center;
     }
 
-    .sobremi2 .h1-titulo{
-        grid-area:h1-titulo ;
-     }
-
-     .sobremi2 .p-titulo{
-        grid-area: p-titulo;
-     }
-
+    .sobremi2 p{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 60rem;
+    }
 
     .planetas-mios{
         display: grid;
