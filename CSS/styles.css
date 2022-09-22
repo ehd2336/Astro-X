@@ -10,10 +10,9 @@
 }
  /* estilos del body*/
 
- .body-miproye{
-    background-color: rgb(232, 239, 197);
- }
-
+ body{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    }
 
  /* estilos de header */
 
@@ -21,17 +20,34 @@
     display: none;
  }
 
+ .barra-navegacion {
+    background-color:rgb(146, 217, 229);
+}
+
+.barra-navegacion li{
+    font-weight:bold ;
+    font-family: 'Dosis', sans-serif;
+}
+.barra-navegacion .navbar-brand{
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive; ;
+}
+
+
  /* estilos del main */
 
  .main-miproye{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 0.6rem;
  }
 
  .main-miproye h2{
-    color: rgb(13, 143, 143);
+    margin-top: 2rem;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+
  }
 
  .main-miproye img{
@@ -39,7 +55,7 @@
 }
 
  .main-miproye p{
-    margin-top: 10px;
+    margin-top: 1rem;
     text-align: center;
  }
 
@@ -48,13 +64,28 @@
 
 .info-dioses{
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.info-dioses h3{
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.info-dioses div button{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    box-shadow: 0.3rem 0.3rem 0.2rem;
+    border-radius: 4rem;
+    transition: 2seg; 
+
 }
 
 .info-dioses p{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1rem,;
 }
 
 
@@ -66,10 +97,22 @@
     width: 100%;
 }
 
-.footer-miproye h4{
+.footer-miproye .redes{
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: black;
     font-size: 1rem;
     margin-bottom: 1.2rem;
 }
+
+.footer-miproye .deerchos{
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+
 
 .footer-miproye a{
     text-decoration: none;
@@ -111,12 +154,15 @@
      display: flex;
      justify-content: space-between;
      background-color: rgb(146, 217, 229);
-     padding: 10px 30px;     
+     padding: 1rem 2.2rem;     
  }
 
  
  .header-miproye h1{
     font-size: 2.8rem;
+    font-family: 'Pacifico', cursive;
+    color: black;
+
  }
 
 
@@ -127,21 +173,23 @@
   
 .header-miproye nav ul li{
      text-decoration: none;
-     margin-right: 10px;
+     margin-right: 1rem;
      background-color: whitesmoke;
-     padding: 8px;
-     margin-top: 5px;
-     box-shadow: 3px 3px 2px;
-     border-radius: 50px;
+     padding: 0.6rem;
+     margin-top: 0.5rem;
+     box-shadow: 0.3rem 0.3rem 0.2rem;
+     border-radius: 3rem;
      transition: 2seg; 
-     font-size: 1rem;   
+     font-size: 1rem;  
+     font-family: 'Signika Negative', sans-serif;
+ 
      
  }
 
     .header-miproye nav ul li:hover{
     background-color: rgb(125, 226, 237);
     transform: scale(0.9);
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
 
  }
     
@@ -230,12 +278,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
     gap: 20px;
  }
 
 .info-dioses p{
-    width: 800px;
+    width: 60rem;
  }
 
 
@@ -249,33 +298,36 @@
     width: 100%;
  }  
 
+ 
+
 .footer-miproye a{
     text-decoration: none;
  }
 
- .imagen-logo{
 
-     margin-top: 10px;
-     margin-bottom: 10px;
+ .imagen-logo{
+     margin-top: 1rem;
+     margin-bottom: 1rem;
      align-items: center;
+    
  }
 
  .insta{
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
+      width: 2.2rem;
+      height: 2.2rem;
+      margin-right: 1rem;
  }
 
  .facebook{
-     width: 30px;
-     height: 30px;
-     margin-right: 10px;
+     width: 2.2rem;
+     height: 2.2rem;
+     margin-right: 1rem;
  }
 
  .youtube{
-     width: 25px;
-     height: 25px;
-     margin-right: 10px;
+     width: 2rem;
+     height: 2rem;
+     margin-right: 1rem;
  }
   
 }  
@@ -298,10 +350,23 @@
 
 /* estilos de listas */
 
+.barranavegacion {
+    background-color:rgb(146, 217, 229);
+}
+
+.barranavegacion li{
+    font-weight:bold ;
+    font-family:'Dosis', sans-serif;
+}
+.barranavegacion .navbar-brand{
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive; ;
+}
+
 .titulo-sobremi{
    display: flex;
    justify-content: center;
-   padding: 10px;
+   padding: 1rem;
    background-color: rgb(249, 103, 24);
 }
 
@@ -310,8 +375,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .sobremi2 img{
@@ -320,8 +385,8 @@
 }
 .sobremi3{
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .sobremi3 p{
@@ -331,7 +396,7 @@
 }
 
 .sobremi3 img{
-    margin-top: 20px;
+    margin-top: 1.2rem;
     width: 70%;
 }
 span{
@@ -339,23 +404,28 @@ span{
     font-size: 1.1rem;
 }
 
-footer{
-    background-color: rgb(146, 217, 229);
-    padding: 0.5rem;
-}
 
 /* -------------------------para desktop-------------------------- */
 
 @media screen and (min-width:600px) {
     
 
-    .barranavegacion{
+    .barranavegacion {
         background-color:rgb(146, 217, 229);
+    }
+
+    .barranavegacion li{
+        font-weight:bold ;
+        font-family: 'Dosis', sans-serif;
+    }
+    .barranavegacion .navbar-brand{
+        font-size: 2.5rem;
+        font-family: 'Pacifico', cursive; ;
     }
     .sobremi2{
        
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .sobremi2 p{
@@ -366,7 +436,7 @@ footer{
     }
 
     .h2-planetas{
-        background-color: aquamarine;
+        background-color:rgb(146, 217, 229);
 
     }
     
@@ -376,18 +446,18 @@ footer{
     }
     .sobremi3{
        
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     
     .sobremi3 img{
-        margin-top: 20px;
+        margin-top: 1.2rem;
     }
 
     .sobremi3 p{
-        margin-top: 20px;
-        width: 800px;
+        margin-top: 1.2rem;
+        width: 60rem;
         font-weight: b;
     }
 
@@ -396,7 +466,7 @@ footer{
     }
 
 
-/*-------------------grid----------------*/
+
     .sobremi2{
         display: flex;
         flex-direction: column;
@@ -409,7 +479,7 @@ footer{
         margin-bottom: 3rem;
         width: 60rem;
     }
-
+/*-------------------grid----------------*/
     .planetas-mios{
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -493,5 +563,31 @@ footer{
 
         
      }
+
+     .footer-miproye{
+        background-color:rgb(146, 217, 229);
+        text-align: center;
+        padding: 0.5rem;
+        width: 100%;
+     }  
+    
 }
-  /* --------------Grid de sobremi.html------------------*/
+/*-----------un poco de estructura para el resto de los html, lo basico basico------------------- */
+
+
+
+main h1{
+    text-align: center;
+}
+main h2{
+    text-align: center;
+}
+main p{
+    text-align: center;
+    width: 30rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+}
