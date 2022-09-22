@@ -149,6 +149,9 @@
 /* tuve que dejar el min en 717px, porque si lo dejaba en 600px se rompia la fluidez y me rompi la cabeza intentando ver porque y no pude, pero asi se corrigio */
 
  
+.contenedor{
+    width: 100%;
+}
         
  .header-miproye{
      display: flex;
@@ -392,6 +395,7 @@
 .sobremi3 p{
     margin-top: 1.2rem;
     margin-left: 1rem;
+    
 
 }
 
@@ -584,7 +588,6 @@ main h2{
 }
 main p{
     text-align: center;
-    width: 30rem;
 }
 
 footer{
