@@ -11,7 +11,7 @@
  /* estilos del body*/
 
  .body-miproye{
-    background-color: rgb(255, 242, 242);
+    background-color: rgb(232, 239, 197);
  }
 
 
@@ -103,7 +103,11 @@
 @media screen and (min-width:717px) {
 /* tuve que dejar el min en 717px, porque si lo dejaba en 600px se rompia la fluidez y me rompi la cabeza intentando ver porque y no pude, pero asi se corrigio */
 
-   
+ .body-miproye{
+    background-image: ;
+    background-repeat: no-repeat;
+    background-size: 150rem;
+ }  
         
  .header-miproye{
      display: flex;
@@ -212,11 +216,15 @@
 
 
   /* divisor */
+
+
   .divisor{
     background-color: orange;
     margin-top: 5rem;
     height: 1rem;
   }
+
+
 /* section */
 
 
@@ -233,63 +241,13 @@
  }
 
 
-/* estilos formulario */
-
-.consulta-astro{
-    display:flex;
-    flex-direction: column;
-    align-content: center;
-    gap: 50px;
-    width: 56.25rem;
- }
-
-.reserva{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    text-align: center; 
- }
-
-.reserva fieldset{
-    padding: 20px;
-    background-color: aquamarine;
-
- }
-
-.nombre input{
-    width: 200px;
-    
- }
-
-
-.correo input{
-    width: 200px;
- }
-
-
-.mensaje input{
-    font-size: 1rem;
-    width: 200px;
-    height: 150px;
-    
-    
- }
-
-.enviar{
-    width: 100px;
- }
-
-.restablecer{
-    width: 100px;
- }
-
 
 /* footer */
 
 .footer-miproye{
     background-color:rgb(146, 217, 229);
     text-align: center;
+    padding: 1rem;
  }  
 
 .footer-miproye a{
@@ -357,6 +315,10 @@
     margin-bottom: 40px;
 }
 
+.sobremi2 img{
+    text-align: center;
+    width: 90%;
+}
 .sobremi3{
     text-align: center;
     margin-top: 40px;
@@ -371,17 +333,26 @@
 
 .sobremi3 img{
     margin-top: 20px;
-    width: 100%;
+    width: 70%;
 }
 span{
     font-weight: bold;
     font-size: 1.1rem;
 }
 
+footer{
+    background-color: rgb(146, 217, 229);
+    padding: 0.5rem;
+}
+
 /* -------------------------para desktop-------------------------- */
 
 @media screen and (min-width:600px) {
     
+
+    .barranavegacion{
+        background-color:rgb(146, 217, 229);
+    }
     .sobremi2{
        
         margin-top: 40px;
@@ -400,6 +371,10 @@ span{
 
     }
     
+    .sobremi2 img{
+        text-align: center;
+        width: 50rem;
+    }
     .sobremi3{
        
         margin-top: 40px;
