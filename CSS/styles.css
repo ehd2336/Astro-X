@@ -57,45 +57,6 @@
     margin-top: 10px;
 }
 
-/*  estilo de formulario */
-
-.reserva{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-}
-
-.reserva fieldset{
-    text-align: center;
-}
-.reserva h3{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.nombre input{
-    width: 150px;
-
- }
-
-.correo input{
-    width: 150px;
-    margin-top: 10px;
-    margin-left: 7px;
-    
- }
-
-
-.mensaje input{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    width: 150px;
-    height: 50px;
-    
- }
-
 
  /* estilos generales del footer */
 
@@ -139,8 +100,8 @@
 
   /* estilos del header*/
 
-@media screen and (min-width:700px) {
-/* tuve que dejar el min en 700px, porque si lo dejaba en 600px se rompia la fluidez y me rompi la cabeza intentando ver porque y no pude, pero asi se corrigio */
+@media screen and (min-width:717px) {
+/* tuve que dejar el min en 717px, porque si lo dejaba en 600px se rompia la fluidez y me rompi la cabeza intentando ver porque y no pude, pero asi se corrigio */
 
    
         
@@ -189,6 +150,10 @@
     text-align: right;
  }
 
+  .barra-navegacion{
+    display: none;
+   }
+
 
  
  /*-------------- estilos de main generales-------------- */
@@ -201,10 +166,10 @@
     grid-template-columns: 1.5fr 1fr ;
     grid-template-rows: 1fr 2fr 1fr 2fr ;
     grid-template-areas:
-    "imagen-ares h2"
-    "imagen-ares p"
-    "imagen-ares h2-dos"
-    "imagen-ares p-dos";
+    "carousel h2"
+    "carousel p"
+    "carousel h2-dos"
+    "carousel p-dos";
     justify-content: center;
     justify-items: center;
     margin-bottom: 1rem;
@@ -214,9 +179,9 @@
 
  /* estilos de main especificos */
   
- main .imagen-ares{
-    grid-area: imagen-ares;
-    width: 80%;
+ main #carousel{
+    grid-area: carousel;
+    width: 60%;
 
  }
 
@@ -517,12 +482,12 @@ span{
      }
 
      .sobremi3 .p-pluton{
-        text-align: left;
+        text-align: center;
         grid-area: p-pluton;
      }
     
      .sobremi3 .p-venus{
-        text-align: left;
+        text-align: center;
         grid-area: p-venus;
        
      }
@@ -540,7 +505,7 @@ span{
     }
 
     .sobremi3 .p-jupiter{
-        text-align: left;
+        text-align: center;
         grid-area: p-jupiter;
      }
 
@@ -551,7 +516,7 @@ span{
     }
 
     .sobremi3 .p-sun{
-        text-align: left;
+        text-align: center;
         grid-area: p-sun;
      }
 }
